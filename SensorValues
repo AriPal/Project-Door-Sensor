@@ -1,0 +1,26 @@
+// Test1.ino
+
+int sensorValue1; // IR1 
+int sensorValue2; // IR1 
+int sensorValue3; // PIR 
+
+void setup() {
+
+Serial.begin(9600); 
+
+}
+
+void loop() {
+
+sensorValue1 = analogRead(A0);
+sensorValue2 = analogRead(A1);
+
+Serial.print(sensorValue1);
+Serial.print("\t");
+Serial.print(sensorValue2);
+Serial.println();
+
+delay(100);   
+
+}
+
